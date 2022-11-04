@@ -14,10 +14,13 @@ header {
   text-align: center;
 
   position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 header h1 {
-  padding-top: 100px;
+  padding-top: 80px;
   padding-bottom: 20px;
 
   font-size: 3rem;
@@ -25,28 +28,25 @@ header h1 {
 }
 
 header p {
+  width: 553px;
   font-size: 1.125rem;
   font-weight: 600;
   padding-bottom: 215px;
 }
 
 main {
-  padding-top: 310px;
-  position: absolute;
-  z-index: 1;
+  padding-top: 250px;
+  position: relative;
+  z-index: 10;
 
   display: flex;
+  justify-content: space-around;
 }
 
 section {
   width: 355px;
-  height: 470px;
   margin: 20px;
   background-color: white;
-
-  color: #828799;
-  font-size: 0.875rem;
-  font-weight: 400;
 
   border: solid #1d539e 1px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -56,20 +56,22 @@ section {
 section h2 {
   padding-top: 30px;
   padding-left: 30px;
+  padding-bottom: 20px;
 
+  color: #1e2338;
   font-size: 1.125rem;
   font-weight: 600;
 }
 
-section div {
-  padding-top: 20px;
-  padding-left: 29px;
+section p {
+  font-weight: 400;
+
+  padding-left: 31px;
+  padding-top: 10px;
 }
 
-section p {
-  padding-top: 10px;
-  padding-left: 30px;
-
+section div p {
+  color: #828799;
   font-size: 1.125rem;
 }
 
@@ -84,9 +86,60 @@ section div p span {
   font-weight: 700;
 }
 
+section p,
+ul {
+  color: #828799;
+  font-size: 0.875rem;
+}
+
 section ul {
-  padding-top: 20px;
-  padding-left: 31px;
+  padding-top: 41px;
+  padding-left: 53px;
+
+  list-style: none;
+  list-style-image: url(./assets/check.svg);
 
   font-weight: 600;
+}
+
+section ul li {
+  padding-top: 20px;
+  padding-left: 10px;
+  font-size: 0.875rem;
+}
+
+section button {
+  margin: 35px;
+  padding: 10px 100px;
+  background-color: white;
+
+  color: #1d539e;
+  font-weight: 800px;
+  font-size: 1.125rem;
+
+  border: 1px solid #1d539e;
+  border-radius: 10px;
+}
+
+#basic h2 {
+  color: #1d539e;
+  background-color: #ffcc29;
+  box-shadow: 0px 1px 2px rgba(142, 150, 185, 0.25);
+  border-radius: 8px 8px 0px 0px;
+}
+
+#basic ul li {
+  font-size: 1rem;
+}
+
+#basic button {
+  background-color: #1d539e;
+  color: white;
+  margin-top: 75px;
+  margin-bottom: 5px;
+}
+
+#free button {
+  margin-top: 120px;
+  margin-bottom: 5px;
 }
