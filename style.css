@@ -8,7 +8,7 @@
 }
 
 header {
-  width: 100vw;
+  width: 100%;
   background-color: #1d539e;
   color: white;
   text-align: center;
@@ -114,18 +114,38 @@ section button {
   background-color: white;
 
   color: #1d539e;
-  font-weight: 800px;
+  font-weight: 800;
   font-size: 1.125rem;
 
   border: 1px solid #1d539e;
   border-radius: 10px;
 }
 
-#basic h2 {
+#basic .head {
   color: #1d539e;
   background-color: #ffcc29;
   box-shadow: 0px 1px 2px rgba(142, 150, 185, 0.25);
   border-radius: 8px 8px 0px 0px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 20px;
+}
+
+#basic .head span {
+  width: 94px;
+  height: 32px;
+  background-color: #1d539e;
+  color: white;
+  border-radius: 40px;
+
+  font-size: 0.75rem;
+  font-weight: 600;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #basic ul li {
