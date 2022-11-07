@@ -1,6 +1,6 @@
 # Rocketseat_Desafios_Pricing_Table
 
-![preview](./.github/preview.png)
+![preview](./preview.png)
 
 > Trilha Discover
 
